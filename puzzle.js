@@ -34,7 +34,7 @@ function puzzle(row$col) {
 	}
     } else {
 	// Math `AAA\nBBB\n`
-	return puzzle(row$col.split('\n').map(x => x.split(' ')))
+	return puzzle(row$col.split('\n').map(x => x.split('')))
     }
 
     // Set rows and cols
